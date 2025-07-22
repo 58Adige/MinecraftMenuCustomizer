@@ -40,6 +40,7 @@
             textBox6 = new TextBox();
             textBox7 = new TextBox();
             richTextBox1 = new RichTextBox();
+            button4 = new Button();
             SuspendLayout();
             // 
             // textBox1
@@ -90,7 +91,7 @@
             button1.TabIndex = 5;
             button1.Text = "Minecraft Logo";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            //button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -109,6 +110,7 @@
             button3.TabIndex = 7;
             button3.Text = "L";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // textBox6
             // 
@@ -134,12 +136,23 @@
             richTextBox1.TabIndex = 10;
             richTextBox1.Text = "Texts";
             // 
+            // button4
+            // 
+            button4.Location = new Point(12, 12);
+            button4.Name = "button4";
+            button4.Size = new Size(112, 55);
+            button4.TabIndex = 11;
+            button4.Text = "Background";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.minecraft;
             ClientSize = new Size(800, 423);
+            Controls.Add(button4);
             Controls.Add(richTextBox1);
             Controls.Add(textBox7);
             Controls.Add(textBox6);
@@ -171,5 +184,6 @@
         private TextBox textBox6;
         private TextBox textBox7;
         private RichTextBox richTextBox1;
+        private Button button4;
     }
 }
