@@ -28,70 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
+            textBoxSingleplayer = new TextBox();
+            textBoxMultiplayer = new TextBox();
+            textBoxMods = new TextBox();
+            textBoxOptions = new TextBox();
+            textBoxQuit = new TextBox();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            button1 = new Button();
+            logoButton = new Button();
             button2 = new Button();
             button3 = new Button();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            richTextBox1 = new RichTextBox();
+            textMojang = new TextBox();
+            textVersion = new TextBox();
+            richTextBoxSplashes = new RichTextBox();
             button4 = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // textBoxSingleplayer
             // 
-            textBox1.Location = new Point(240, 180);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(338, 27);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "Singleplayer";
+            textBoxSingleplayer.Location = new Point(240, 180);
+            textBoxSingleplayer.Name = "textBoxSingleplayer";
+            textBoxSingleplayer.Size = new Size(338, 27);
+            textBoxSingleplayer.TabIndex = 0;
+            textBoxSingleplayer.Text = "Singleplayer";
             // 
-            // textBox2
+            // textBoxMultiplayer
             // 
-            textBox2.Location = new Point(240, 213);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(338, 27);
-            textBox2.TabIndex = 1;
-            textBox2.Text = "Multiplayer";
+            textBoxMultiplayer.Location = new Point(240, 213);
+            textBoxMultiplayer.Name = "textBoxMultiplayer";
+            textBoxMultiplayer.Size = new Size(338, 27);
+            textBoxMultiplayer.TabIndex = 1;
+            textBoxMultiplayer.Text = "Multiplayer";
             // 
-            // textBox3
+            // textBoxMods
             // 
-            textBox3.Location = new Point(240, 246);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(338, 27);
-            textBox3.TabIndex = 2;
-            textBox3.Text = "Mods";
+            textBoxMods.Location = new Point(240, 246);
+            textBoxMods.Name = "textBoxMods";
+            textBoxMods.Size = new Size(338, 27);
+            textBoxMods.TabIndex = 2;
+            textBoxMods.Text = "Mods";
             // 
-            // textBox4
+            // textBoxOptions
             // 
-            textBox4.Location = new Point(240, 279);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(166, 27);
-            textBox4.TabIndex = 3;
-            textBox4.Text = "Options";
+            textBoxOptions.Location = new Point(240, 279);
+            textBoxOptions.Name = "textBoxOptions";
+            textBoxOptions.Size = new Size(166, 27);
+            textBoxOptions.TabIndex = 3;
+            textBoxOptions.Text = "Options";
             // 
-            // textBox5
+            // textBoxQuit
             // 
-            textBox5.Location = new Point(412, 279);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(166, 27);
-            textBox5.TabIndex = 4;
-            textBox5.Text = "Exit";
+            textBoxQuit.Location = new Point(412, 279);
+            textBoxQuit.Name = "textBoxQuit";
+            textBoxQuit.Size = new Size(166, 27);
+            textBoxQuit.TabIndex = 4;
+            textBoxQuit.Text = "Exit";
             // 
-            // button1
+            // logoButton
             // 
-            button1.Location = new Point(240, 99);
-            button1.Name = "button1";
-            button1.Size = new Size(338, 75);
-            button1.TabIndex = 5;
-            button1.Text = "Minecraft Logo";
-            button1.UseVisualStyleBackColor = true;
-            //button1.Click += button1_Click;
+            logoButton.BackgroundImageLayout = ImageLayout.Stretch;
+            logoButton.Location = new Point(240, 99);
+            logoButton.Name = "logoButton";
+            logoButton.Size = new Size(338, 75);
+            logoButton.TabIndex = 5;
+            logoButton.Text = "Minecraft Logo";
+            logoButton.UseVisualStyleBackColor = true;
+            logoButton.Click += logoButton_Click;
             // 
             // button2
             // 
@@ -112,29 +113,29 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // textBox6
+            // textMojang
             // 
-            textBox6.Location = new Point(665, 388);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(125, 27);
-            textBox6.TabIndex = 8;
-            textBox6.Text = "Copyright";
+            textMojang.Location = new Point(665, 388);
+            textMojang.Name = "textMojang";
+            textMojang.Size = new Size(125, 27);
+            textMojang.TabIndex = 8;
+            textMojang.Text = "Copyright";
             // 
-            // textBox7
+            // textVersion
             // 
-            textBox7.Location = new Point(12, 388);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(174, 27);
-            textBox7.TabIndex = 9;
-            textBox7.Text = "Version";
+            textVersion.Location = new Point(12, 388);
+            textVersion.Name = "textVersion";
+            textVersion.Size = new Size(174, 27);
+            textVersion.TabIndex = 9;
+            textVersion.Text = "Version";
             // 
-            // richTextBox1
+            // richTextBoxSplashes
             // 
-            richTextBox1.Location = new Point(584, 68);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(158, 24);
-            richTextBox1.TabIndex = 10;
-            richTextBox1.Text = "Texts";
+            richTextBoxSplashes.Location = new Point(584, 68);
+            richTextBoxSplashes.Name = "richTextBoxSplashes";
+            richTextBoxSplashes.Size = new Size(158, 24);
+            richTextBoxSplashes.TabIndex = 10;
+            richTextBoxSplashes.Text = "Texts";
             // 
             // button4
             // 
@@ -153,17 +154,17 @@
             BackgroundImage = Properties.Resources.minecraft;
             ClientSize = new Size(800, 423);
             Controls.Add(button4);
-            Controls.Add(richTextBox1);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
+            Controls.Add(richTextBoxSplashes);
+            Controls.Add(textVersion);
+            Controls.Add(textMojang);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(logoButton);
+            Controls.Add(textBoxQuit);
+            Controls.Add(textBoxOptions);
+            Controls.Add(textBoxMods);
+            Controls.Add(textBoxMultiplayer);
+            Controls.Add(textBoxSingleplayer);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -172,18 +173,18 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
+        private TextBox textBoxSingleplayer;
+        private TextBox textBoxMultiplayer;
+        private TextBox textBoxMods;
+        private TextBox textBoxOptions;
+        private TextBox textBoxQuit;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private Button button1;
+        private Button logoButton;
         private Button button2;
         private Button button3;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private RichTextBox richTextBox1;
+        private TextBox textMojang;
+        private TextBox textVersion;
+        private RichTextBox richTextBoxSplashes;
         private Button button4;
     }
 }
